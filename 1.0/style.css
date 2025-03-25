@@ -1,0 +1,50 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/* Define a altura */
+    color: white; /* Define a cor da fonte */
+    background: /* Cor de fundo da página */
+    linear-gradient(217deg, rgba(255,0,0,.7), rgba(255,0,0,0) 70%),
+    linear-gradient(127deg, rgba(55,200,200,.8), rgba(55,200,200,0) 70%),
+    linear-gradient(336deg, rgba(0,0,255,.9), rgba(0,0,255,0) 70%);
+}
+
+/* Caixa principal da calculadora */
+.calculator { 
+    width: 250px; /* Define a largura */
+    height: 440px; /* Define a altura */
+    background: rgba(0, 0, 0, 0.8); /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centraliza o texto */
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31,31,31);
+    border: none;
+    color: #fff;
+}
+
+.botao:hover{
+    background-color: black;
+}
+
+#resultado{
+    background-color: white;
+    width: 230px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

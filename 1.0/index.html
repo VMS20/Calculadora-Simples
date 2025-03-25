@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta chaset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css"> <!-- Importa o CSS -->
+        <script src="script.js"></script> <!-- Importa o JAVASCRIPT -->
+
+    </head>
+    
+    <body>
+
+        <div class="calculator">
+            
+            <h1>Calculadora</h1>
+            
+            <div class="resultado">
+                
+                <p id="resultado"></p> <!-- Tela da calculadora -->
+
+            </div>
+            
+            <table>
+
+                <tr>
+                    <td><button class="botao" onclick="clearDisplay()">del</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('(')">(</button></td>
+                    <td><button class="botao" onclick="appendToDisplay(')')">)</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('%')">%</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="appendToDisplay('7')">7</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('8')">8</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('9')">9</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="appendToDisplay('4')">4</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('5')">5</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('6')">6</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="appendToDisplay('1')">1</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('2')">2</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('3')">3</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="appendToDisplay('0')" class="zero">0</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('.')">.</button></td>
+                    <td><button class="botao" onclick="calculateResult()">=</button></td>
+                    <td><button class="botao" onclick="appendToDisplay('+')">+</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+        
+    </body>
+
+</html>
